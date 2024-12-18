@@ -3,15 +3,17 @@
 "use client";
 import React, { useState } from "react"
 import ProductDetail from "./Components/ProductDetail";
-import About from "./Pages/About/page"
-import ShoppingCartPage from "./Pages/ShoppingCart/page";
-import ProductListingPage from "./Pages/ProductListing/page";
+
 
 import { MdMenuOpen } from "react-icons/md";
 import { CiUser } from "react-icons/ci";
 import { IoIosArrowDropdown } from "react-icons/io";
-import Home from "./Pages/Home/page";
-import Cart from "./Pages/Cart/page";
+import Home from "./Home";
+import Cart from "./Cart";
+import About from "./About";
+import ProductListing from "./ProductListing";
+import ShoppingCart from "./ShoppingCart";
+
 
 
 const App: React.FC = () => {
@@ -25,13 +27,13 @@ const App: React.FC = () => {
       case "aboutPage":
         return <About />;
         case "productListingPage":
-          return <ProductListingPage/>;
+          return <ProductListing/>;
       case "productDetail":
         return <ProductDetail />;
       case "cartDetail":
         return <Cart />;
       case "shoppingCartPage":
-        return <ShoppingCartPage />;
+        return <ShoppingCart />;
       default:
         return <Home />;
     }
