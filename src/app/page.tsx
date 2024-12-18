@@ -2,17 +2,17 @@
 /* eslint-disable react/jsx-no-undef */
 "use client";
 import React, { useState } from "react"
-import ProductDetail from "./Components/ProductDetail";
+import ProductDetail from "../Components/ProductDetail";
 
 
 import { MdMenuOpen } from "react-icons/md";
 import { CiUser } from "react-icons/ci";
 import { IoIosArrowDropdown } from "react-icons/io";
-import Home from "./Home";
-import Cart from "./Cart";
-import About from "./About";
-import ProductListing from "./ProductListing";
-import ShoppingCart from "./ShoppingCart";
+import Home from "../Home";
+import Cart from "../Cart";
+import About from "../About";
+import ProductListing from "../ProductListing";
+import ShoppingCart from "../ShoppingCart";
 
 
 
